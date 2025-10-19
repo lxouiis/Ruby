@@ -1,5 +1,5 @@
 // ==== config ====
-const GO_TO_PAGE3 = "../heart/Heart/dist/index.html";
+const GO_TO_PAGE3 = "../../heart/Heart/dist/index.html";
  // << adjust path if needed
 
 // Navigate once helper
