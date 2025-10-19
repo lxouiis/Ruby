@@ -1,6 +1,20 @@
 // in js/page2.js
-const GO_TO_PAGE3 = "heart/Heart/dist/index.html"; // no ../
-location.href = GO_TO_PAGE3;
+document.addEventListener("DOMContentLoaded", () => {
+  // builds: https://<user>.github.io/Ruby/heart/Heart/dist/index.html
+  const GO_TO_PAGE3 = new URL("heart/Heart/dist/index.html", document.baseURI).href;
+
+  // click -> go
+  const charBtn = document.getElementById("charBtn");
+  if (charBtn) {
+    charBtn.addEventListener("click", () => window.location.assign(GO_TO_PAGE3));
+  }
+
+  // (optional) auto-redirect after N ms:
+  // setTimeout(() => window.location.replace(GO_TO_PAGE3), 1500);
+
+  // debug:
+  console.log("Redirecting to:", GO_TO_PAGE3);
+});
 
  // << adjust path if needed
 
