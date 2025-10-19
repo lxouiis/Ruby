@@ -1,5 +1,7 @@
-// ==== config ====
-const GO_TO_PAGE3 = "../../heart/Heart/dist/index.html";
+// in js/page2.js
+const GO_TO_PAGE3 = "heart/Heart/dist/index.html"; // no ../
+location.href = GO_TO_PAGE3;
+
  // << adjust path if needed
 
 // Navigate once helper
