@@ -13,3 +13,24 @@ Auto navigation to the next scene when the video ends
 GSAP animation page (Happy Birthday) ready in /birthday/dist
 
 Phone-first layout with smooth, simple CSS transitions
+
+
+/
+├─ index.html                 # Sunflower landing page (plays video, then go to /birthday/dist)
+├─ Video-709.mp4              # First video (can be moved to /assets; update path in JS)
+├─ page2.html                 # (optional next) Card page – to be wired later
+├─ video2.html                # (optional next) Second video – to be wired later
+├─ final.html                 # (optional next) Final message – to be wired later
+├─ css/
+│  └─ main.css                # Global styles + overlay styles
+├─ js/
+│  └─ index.js                # Popup video + navigation logic
+├─ assets/
+│  ├─ titlebg.png             # Ribbon/title decorative image
+│  ├─ ribbon.png              # Sunflower “seal” image
+│  └─ sunflower-bg.png        # Repeating background pattern
+└─ birthday/
+   └─ dist/
+      ├─ index.html           # Happy Birthday page (GSAP)
+      ├─ style.css            # HB styles
+      └─ script.js            # HB animations (requires GSAP)
