@@ -1,7 +1,7 @@
 /* =========================
    CONFIG
 ========================= */
-const VIDEO_SRC = "../../../Sunflower(1)(1).mp4";    // correct (3 levels up to root)
+const VIDEO_SRC = "../../../flower.mp4";    // correct (3 levels up to root)
 const NEXT_PAGE = "../../../game/index.html";  // correct (3 levels up to root)
 const HEART_ANIM_MS = 6000;
 const FALLBACK_PLAY_MS = 20000;
