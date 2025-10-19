@@ -134,12 +134,14 @@ body .greeting .s.space {
 body .greeting .s.squeeze {
   margin-left: -2px;
 }
+/* from dist/ → up to repo root → into /assets */
 main.background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("assets/background.jpg") center/cover no-repeat;
+  background: url("../../assets/background.jpg") center/cover no-repeat;
   z-index: -1;
 }
+
