@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // If your video is in /assets, change to "assets/Video-709.mp4"
   const VIDEO_SRC = "Video-709.mp4";
-  const NEXT_PAGE = "/birthday/Dist/index.html";
+  const NEXT_PAGE = "birthday/dist/index.html";
   const TRIGGER_TIME = null; // e.g., 7.2 to jump mid-video; null = redirect on ended
 
   const $ = (sel) => document.querySelector(sel);
