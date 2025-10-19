@@ -144,4 +144,23 @@ main.background {
   background: url("../../assets/background.jpg") center/cover no-repeat;
   z-index: -1;
 }
+/* notice line */
+#after-song {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+}
+
+/* hidden helper */
+.hidden { display: none; }
+
 
