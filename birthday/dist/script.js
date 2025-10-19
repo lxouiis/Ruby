@@ -65,6 +65,34 @@ function smallHeartAnim() {
     stagger: {
       each: 0.08,
       from: 'random' } });
+  (function () {
+  const audio = document.getElementById('bg-music');
+  if (!audio) return;
+
+  // Ensure it starts
+  const start = () => audio.play().catch(()=>{});
+  if (audio.readyState >= 2) start();
+  else audio.addEventListener('canplay', start, { once: true });
+
+  // Try to unmute after a short delay (works on many desktop/mobile browsers)
+  setTimeout(() => {
+    try {
+      audio.muted = false;              // attempt unmute
+      if (audio.paused) audio.play();   // kick it again just in case
+    } catch (e) {}
+  }, 1200);
+
+  // Also retry unmute on visibility/focus changes (helps some browsers)
+  const retry = () => {
+    try {
+      audio.muted = false;
+      if (audio.paused) audio.play();
+    } catch (e) {}
+  };
+  document.addEventListener('visibilitychange', retry);
+  window.addEventListener('focus', retry);
+})();
+
 
 
 
