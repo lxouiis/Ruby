@@ -92,6 +92,11 @@ function smallHeartAnim() {
   document.addEventListener('visibilitychange', retry);
   window.addEventListener('focus', retry);
 })();
+  // show the notice when the song ends
+document.getElementById('bg-music')?.addEventListener('ended', () => {
+  document.getElementById('after-song')?.classList.remove('hidden');
+});
+
 
 
 
