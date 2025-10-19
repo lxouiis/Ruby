@@ -2,7 +2,7 @@
    CONFIG
 ========================= */
 const VIDEO_SRC = "../../Video-709.mp4";
-const NEXT_PAGE = "../../game/index.html";  // ✅ fixed path
+const NEXT_PAGE = "../../../game/index.html";  // ✅ fixed path
 const HEART_ANIM_MS = 6000;
 const FALLBACK_PLAY_MS = 20000;
 
