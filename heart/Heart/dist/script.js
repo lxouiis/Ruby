@@ -1,8 +1,8 @@
 /* =========================
    CONFIG
 ========================= */
-const VIDEO_SRC = "../../Video-709.mp4";
-const NEXT_PAGE = "../../../game/index.html";  // ✅ fixed path
+const VIDEO_SRC = "../../../Video-709.mp4";    // correct (3 levels up to root)
+const NEXT_PAGE = "../../../game/index.html";  // correct (3 levels up to root)
 const HEART_ANIM_MS = 6000;
 const FALLBACK_PLAY_MS = 20000;
 
